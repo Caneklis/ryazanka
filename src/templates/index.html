@@ -1,0 +1,199 @@
+---
+title: Главная страница
+description: Description index
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+
+<section class="about">
+  <div class="about__img">
+    <!-- <img src="images/about-pic.png" alt=""> -->
+  </div>
+  <div class="about__wrapper">
+    <div class="about__text">
+      <p>В Центральной России на границе Липецкой
+        и Рязанской областей на берегу небольшой речки Рановы, несущей свои воды в Волгу среди русских полей,
+        разделенных могучими оврагами, по склонам которых колышутся на ветру куртины ковыля, да кое-где встречающихся
+        небольших массивов леса, рядом с маленькой деревушкой Рязанка стоит скромная усадьба, в которой родился и вырос
+        первый европеец, исследовавший горную систему Тянь–Шань, положивший начало славной эпохе научного завоевания
+        русскими учёными Центральной Азии – Петр Петрович Семенов–Тян–Шанский.</p>
+      <a class="about__link" href="#">Читать историю усадьбы</a>
+    </div>
+    <div class="about__img-decr"><strong>Вид на парк с северной веранды.</strong> 1890-е гг. Рязанка</div>
+  </div>
+</section>
+
+<section class="events">
+  <div class="events__wrapper">
+    <h2 class="events__title">События</h2>
+    <a class="events__all-link" href="#">Все новости</a>
+  </div>
+  <div class="events__slider">
+    <div class="swiper-wrapper">
+      {% for item in range(0, 4) -%}
+      <div class="events__slide swiper-slide">
+        <a class="events__slide-link" href="#">
+          <div class="events__slide-photo">
+            <img src="https://via.placeholder.com/380x380" alt="Описание изображения">
+          </div>
+          <div class="events__slide-content">
+            <div class="events__slide-type">Выставка</div>
+            <h2>Выставка «ШАНС КОГО»</h2>
+            <p>27 августа в Музее-усадьбе П.П.Семёнова-Тян-Шанского состоялось открытие выставки работ по итогу
+              пленэра
+              творческой мастерской «ШАНС КОГО».</p>
+            <time class="events__slide-date" datetime="2021-08-27">27 августа 2021</time>
+          </div>
+        </a>
+      </div>
+
+      <div class="events__slide swiper-slide">
+        <a class="events__slide-link" href="#">
+          <div class="events__slide-photo">
+            <img src="https://via.placeholder.com/380x380" alt="Описание изображения">
+          </div>
+          <div class="events__slide-content">
+            <div class="events__slide-type  events__slide-type--type-2 ">Мероприятие</div>
+            <h2>Фестиваль-погружение «Тайны усадьбы»</h2>
+            <p>31 июля 2021 года - особенный день
+              в усадьбе. Долгие месяцы подготовки
+              для того, чтобы погрузиться хотя бы
+              на один день в атмосферу 19 века.</p>
+            <time class="events__slide-date" datetime="2021-08-04">4 августа 2021</time>
+          </div>
+        </a>
+      </div>
+      {%- endfor %}
+    </div>
+    <div class="events__slider-controls">
+      <div class="swiper-button-prev">
+        <svg viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
+          <use href="images/sprite_auto.svg#arrow-prev" width="20" height="13" fill="currentColor" />
+        </svg>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next">
+        <svg viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
+          <use href="images/sprite_auto.svg#arrow-next" width="20" height="13" fill="currentColor" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="vr">
+  <div class="vr__wrapper">
+    <div class="vr__left">
+      <a class="vr__tour-link" href="#"></a>
+      <p>Музей-усадьба Рязанка. Гостиная (пример)</p>
+    </div>
+    <div class="vr__right">
+      <img src="" alt="" class="vr__title">
+      <p>Посетите усадьбу не выходя из дома. Текст описания виртуального тура текст описания виртуального тура текст
+        описания виртуального тура текст описания текст описания текст описания виртуального тура текст описания текст
+        описания текст описания текст описания текст.</p>
+      <a class="vr__link" href="#">Виртуальная прогулка</a>
+    </div>
+  </div>
+</section>
+
+<section class="souvenirs">
+  <div class="souvenirs__wrapper">
+    <h2 class="souvenirs__title">Cувенирная продукция</h2>
+    <a class="souvenirs__all-link" href="#">Все сувениры</a>
+  </div>
+  <div class="souvenirs__slider">
+    <div class="swiper-wrapper">
+      {% for item in range(0, 4) -%}
+      <div class="souvenirs__slide swiper-slide">
+        <div class="souvenirs__slide-head">
+          <h3>Футболка «VR Рязанка»</h3>
+          <p>100 ₽</p>
+        </div>
+        <div class="souvenirs__slide-photo"><img src="images/item-1.png" alt="Описание"></div>
+        <a class="souvenirs__slide-link" href="#">Купить</a>
+      </div>
+      <div class="souvenirs__slide swiper-slide">
+        <div class="souvenirs__slide-head">
+          <h3>Книга «Родина Петра Семенова-Тян-Шанского»</h3>
+          <p>100 ₽</p>
+        </div>
+        <div class="souvenirs__slide-photo"><img src="images/item-2.png" alt="Описание"></div>
+        <a class="souvenirs__slide-link" href="#">Купить</a>
+      </div>
+      {%- endfor %}
+    </div>
+    <div class="souvenirs__slider-controls">
+      <div class="swiper-button-prev">
+        <svg viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
+          <use href="images/sprite_auto.svg#arrow-prev" width="20" height="13" fill="currentColor" />
+        </svg>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next">
+        <svg viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
+          <use href="images/sprite_auto.svg#arrow-next" width="20" height="13" fill="currentColor" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacts">
+  <div class="contacts__wrapper">
+    <h2 class="contacts__title">Где мы находимся</h2>
+    <a class="contacts__link" href="#">Подробнее</a>
+    <div class="contacts__map">
+      <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A44eb65110b1b344e7690d6d793a55dac495f6de4e18be2281a3a3497b9a280ea&amp;width=100%25&amp;height=480&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    <div class="contacts__text">
+      <h3>Музей-усадьба П. П. Семенова-Тян-Шанского</h3>
+      <p>Липецкая область, Чаплыгинский район, дер. Рязанка, д 40</p>
+      <p>
+        <svg viewBox="0 0 18 18" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+          <use href="images/sprite_auto.svg#phone" fill="currentColor" />
+        </svg>
+        +7 905 689 99 09
+      </p>
+      <p>
+        <svg viewBox="0 0 22 16" width="22" height="16" xmlns="http://www.w3.org/2000/svg">
+          <use href="images/sprite_auto.svg#mail" fill="currentColor" />
+        </svg>
+        <a href="#">info.ppsts@gmail.com</a>
+      </p>
+      <h4>Режим работы музея</h4>
+      <table>
+        <tr>
+          <td>вт-вс</td>
+          <td>9:00 - 17:00</td>
+        </tr>
+        <tr>
+          <td>пн</td>
+          <td>выходной</td>
+        </tr>
+      </table>
+      <img src="images/signature.svg" alt="Изображение подписи" class="contacts__signature">
+    </div>
+  </div>
+</section>
+
+<section class="partners">
+  <div class="partners__wrapper">
+    <ul class="partners__list">
+      <li class="partners__item"><a href="#"><img src="images/partners/minkult.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="images/partners/kulturarf.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="images/partners/upr-culturi.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="images/partners/logo-granti.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="images/partners/fond-vozr-usadbi.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="images/partners/liptur.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="images/partners/museii-rossii.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="images/partners/kultforum-spb.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="images/partners/eche-kakoe-to-logo.svg" alt=""></a></li>
+    </ul>
+  </div>
+</section>
+
+{% endblock %}

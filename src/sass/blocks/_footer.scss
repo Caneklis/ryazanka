@@ -1,0 +1,27 @@
+.footer {
+  position: relative;
+  margin-top: 35px;
+  background-color: #e4f0e9;
+  border-top: 4px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to right, #587162, #61b893);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 4px;
+    background: linear-gradient(to right, #587162, #61b893);
+  }
+}
+
+.footer__social-list {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  padding-top: 28px;
+}

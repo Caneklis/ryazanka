@@ -1,0 +1,25 @@
+.partners {
+  background-image: url("../images/partners-bg.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-bottom: 330px;
+  background-attachment: fixed;
+}
+
+.partners__wrapper {
+  @include wrapper;
+  display: grid;
+  grid-template-columns: repeat(12, [col] 1fr);
+  column-gap: 40px;
+}
+
+.partners__list {
+  @include list-reset;
+  grid-column: col / span 7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 100px;
+  row-gap: 150px;
+}

@@ -1,0 +1,31 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin wrapper {
+  width: 100%;
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin btn {
+  padding: 11px 34px 10px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #597263;
+  border: 2px solid #597263;
+  border-radius: 10px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #fff;
+    background-color: #597263;
+  }
+}

@@ -1,0 +1,28 @@
+.vr {
+  position: relative;
+  background-image: url("../images/vr-bg.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  &::before {
+  }
+}
+
+.vr__wrapper {
+  @include wrapper;
+  display: grid;
+  grid-template-columns: repeat(12, [col] 1fr);
+  column-gap: 40px;
+}
+
+.vr__left {
+  grid-column: col / span -1;
+}
+
+.vr__right {
+  grid-column: 7 / span 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #daecf4;
+}
