@@ -19,9 +19,156 @@
   }
 }
 
+.footer__wrapper {
+  @include wrapper;
+  display: grid;
+  row-gap: 20px;
+  padding-bottom: 70px;
+
+  @media ($desktop) {
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr);
+    column-gap: 40px;
+    row-gap: 90px;
+  }
+}
+
+.footer__logo {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -100px;
+
+  @media ($tablet) {
+    align-items: flex-start;
+  }
+
+  @media ($desktop) {
+    margin-top: -100px;
+    grid-row: 1/2;
+    grid-column: col / span 2;
+  }
+}
+
+.footer__nav {
+  padding-top: 55px;
+
+  @media ($tablet) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 30px;
+  }
+
+  @media ($desktop) {
+    grid-row: 1/2;
+    grid-column: 6 / span 7;
+  }
+}
+
+.footer__nav-list {
+  @include list-reset;
+}
+
+.footer__nav-item {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+
+  &:first-child {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #597263;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .footer__social-list {
   @include list-reset;
   display: flex;
   justify-content: center;
+  gap: 45px;
   padding-top: 28px;
+}
+
+.footer__social-item {
+  a {
+    color: #597263;
+    transition: $transition;
+
+    &:hover {
+      color: #79cf9b;
+    }
+  }
+}
+
+.footer__copyright {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #597263;
+
+  @media ($desktop) {
+    grid-row: 2/3;
+    grid-column: col / span 3;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.footer__nav-links {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  @media ($desktop) {
+    grid-row: 2/3;
+    grid-column: 6 / span 7;
+  }
+}
+
+.footer__nav-link {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 11px 30px 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  background: #597263;
+  border-radius: 5px;
+  border: 2px solid #597263;
+  transition: $transition;
+
+  &:hover {
+    background-color: #fff;
+    color: #597263;
+  }
+
+  &--white {
+    color: #597263;
+    background-color: #fff;
+
+    &:hover {
+      background-color: #597263;
+      color: #fff;
+    }
+  }
 }
