@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       1200: {
         slidesPerView: 2,
+        spaceBetween: 40,
       },
     },
   });
@@ -55,10 +56,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   var image = document.getElementsByClassName("thumbnail");
   new simpleParallax(image, {
-    overflow: true,
+    overflow: false,
     delay: 0.6,
     transition: "cubic-bezier(0,0,0,1)",
-    maxTransition: 60,
+    // maxTransition: 60,
   });
 
   // // Parallax effect
