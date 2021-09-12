@@ -1,9 +1,23 @@
 .main-nav__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+
   .main-nav__icon {
-    stroke: $base-color;
+    margin: auto;
+    color: #597263;
 
     &-cross {
       display: none;
+      stroke: $base-color;
     }
 
     &-menu {
@@ -38,18 +52,35 @@
   display: none;
 
   &--open {
-    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
 
     @media ($tablet) {
       display: flex;
+      flex-direction: row;
       justify-content: flex-end;
     }
   }
 
   @media ($tablet) {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     column-gap: 45px;
+  }
+
+  &--invert {
+    .main-nav__link {
+      color: #fff;
+    }
   }
 }
 

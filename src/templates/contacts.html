@@ -1,0 +1,81 @@
+---
+title: Контакты
+description: Description index
+---
+{% extends "layouts/_layout-inner.html" %}
+
+{% block content %}
+
+{% include "./partials/_breadcrumbs.html" %}
+
+<section class="content">
+  <div class="content__wrapper">
+    <h1 class="content__title">{{title}}</h1>
+  </div>
+
+  <section class="contacts  contacts--inner">
+    <div class="contacts__wrapper">
+      <div class="contacts__map">
+        <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A44eb65110b1b344e7690d6d793a55dac495f6de4e18be2281a3a3497b9a280ea&amp;width=100%25&amp;height=480&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      <div class="contacts__text">
+        <h3>Музей-усадьба П. П. Семенова-Тян-Шанского</h3>
+        <p>Липецкая область, Чаплыгинский район, дер. Рязанка, д 40</p>
+        <p>
+          <svg viewBox="0 0 18 18" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+            <use href="images/sprite_auto.svg#phone" fill="currentColor" />
+          </svg>
+          +7 905 689 99 09
+        </p>
+        <p>
+          <svg viewBox="0 0 22 16" width="22" height="16" xmlns="http://www.w3.org/2000/svg">
+            <use href="images/sprite_auto.svg#mail" fill="currentColor" />
+          </svg>
+          <a href="#">info.ppsts@gmail.com</a>
+        </p>
+        <h4>Режим работы музея</h4>
+        <table>
+          <tr>
+            <td>вт-вс</td>
+            <td>9:00 - 17:00</td>
+          </tr>
+          <tr>
+            <td>пн</td>
+            <td>выходной</td>
+          </tr>
+        </table>
+
+        <h3>Офис музея-усадьбы в г. Липецк</h3>
+        <p>г. Липецк, пр-т Победы, 67а</p>
+        <p>
+          <svg viewBox="0 0 18 18" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+            <use href="images/sprite_auto.svg#phone" fill="currentColor" />
+          </svg>
+          +7 4742 565 306
+        </p>
+        <p>
+          <svg viewBox="0 0 22 16" width="22" height="16" xmlns="http://www.w3.org/2000/svg">
+            <use href="images/sprite_auto.svg#mail" fill="currentColor" />
+          </svg>
+          <a href="#">info.ppsts@gmail.com</a>
+        </p>
+        <h4>Режим работы музея</h4>
+        <table>
+          <tr>
+            <td>вт-вс</td>
+            <td>9:00 - 17:00</td>
+          </tr>
+          <tr>
+            <td>пн</td>
+            <td>выходной</td>
+          </tr>
+        </table>
+        <img src="images/signature.svg" alt="Изображение подписи" class="contacts__signature">
+      </div>
+    </div>
+  </section>
+</section>
+
+
+{% endblock %}

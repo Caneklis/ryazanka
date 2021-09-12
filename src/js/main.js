@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const eventsSwiper = new Swiper(".events__slider", {
     // Optional parameters
-    slidesPerView: "auto",
+    slidesPerView: 1,
     spaceBetween: 20,
     // If we need pagination
     pagination: {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const souvenirsSwiper = new Swiper(".souvenirs__slider", {
     // Optional parameters
-    slidesPerView: "auto",
+    slidesPerView: 1,
     spaceBetween: 20,
     // If we need pagination
     pagination: {
@@ -56,11 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   var image = document.getElementsByClassName("thumbnail");
   new simpleParallax(image, {
-    overflow: false,
-    delay: 0.6,
+    overflow: true,
+    delay: 0.5,
     transition: "cubic-bezier(0,0,0,1)",
-    // maxTransition: 60,
+    // maxTransition: 40,
   });
+  var imageNoOverflow = document.getElementsByClassName(
+    "thumbnail-no-overflow"
+  );
 
   // // Parallax effect
   // // Adapted from @ilonacodes article ->  https://link.medium.com/7fFiON6Q1X

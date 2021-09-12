@@ -1,9 +1,10 @@
 .partners {
-  background-image: url("../images/partners-bg.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  padding-bottom: 330px;
-  background-attachment: fixed;
+  // background-image: url("../images/partners-bg.png");
+  // background-repeat: no-repeat;
+  // background-position: right center;
+  // padding-bottom: 330px;
+  // background-attachment: fixed;
+  position: relative;
 }
 
 .partners__wrapper {
@@ -22,4 +23,52 @@
   align-items: center;
   column-gap: 100px;
   row-gap: 150px;
+
+  @media (max-width: 767px) {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 20px;
+    row-gap: 40px;
+    max-width: 280px;
+  }
+}
+
+.partners__item {
+  @media (max-width: 767px) {
+    width: 45%;
+    max-width: 135px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.partners__parallax {
+  // grid-column: 8 / span 5;
+  // margin-right: -20px;
+
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: 20px;
+
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  // }
+
+  @media (max-width: 767px) {
+    position: relative;
+    // position: static;
+    margin-top: 40px;
+    grid-column: 1 / -1;
+    width: 100%;
+    right: 0;
+    max-width: 350px;
+    // margin-left: auto;
+  }
 }

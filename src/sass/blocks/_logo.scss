@@ -1,0 +1,17 @@
+.logo {
+  margin-right: auto;
+}
+
+.logo__link {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #587162;
+
+  &--invert {
+    color: #fff;
+  }
+}

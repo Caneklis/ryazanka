@@ -1,0 +1,38 @@
+.content__wrapper {
+  @include wrapper;
+
+  @media ($tablet) {
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr);
+    column-gap: 40px;
+  }
+}
+
+.content__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 28px;
+  color: #597263;
+
+  @media ($tablet) {
+    grid-column: col/ span 8;
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+.content__main {
+  padding-top: 30px;
+
+  @media ($tablet) {
+    grid-column: col / span 12;
+    padding-top: 60px;
+  }
+}
+
+.content__filter {
+  grid-column: 9 / span 3;
+  grid-row: 1/2;
+  margin-left: auto;
+}

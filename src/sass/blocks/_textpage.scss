@@ -1,0 +1,111 @@
+.textpage {
+  padding: 0 20px;
+}
+
+.textpage__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #fff;
+  box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  @media ($tablet) {
+    padding-top: 57px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media ($desktop) {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+
+.textpage__text {
+  h1 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 28px;
+    color: #597263;
+
+    @media ($tablet) {
+      margin-bottom: 60px;
+      font-size: 36px;
+      line-height: 48px;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #75af8c;
+
+    @media ($tablet) {
+      margin-top: 60px;
+      margin-bottom: 50px;
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+
+    @media ($tablet) {
+      margin-bottom: 30px;
+    }
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+
+    @media ($tablet) {
+      margin-bottom: 30px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  figure {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #b3d7c2;
+
+    @media ($tablet) {
+      margin-bottom: 50px;
+      padding-bottom: 20px;
+    }
+  }
+
+  figcaption {
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+
+    @media ($tablet) {
+      margin-top: 20px;
+    }
+  }
+}

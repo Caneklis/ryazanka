@@ -1,0 +1,47 @@
+---
+title: События
+description: Description index
+---
+{% extends "layouts/_layout-inner.html" %}
+
+{% block content %}
+
+{% include "./partials/_breadcrumbs.html" %}
+
+<section class="content">
+  <div class="content__wrapper">
+    <h1 class="content__title">{{title}}</h1>
+
+    <div class="content__main">
+      <div class="events">
+        <ul class="events__list">
+          {% for item in range(0, 4) -%}
+          <li class="events__slide swiper-slide">
+            <a class="events__slide-link" href="#">
+              <div class="events__slide-photo">
+                <img src="https://via.placeholder.com/380x380" alt="Описание изображения">
+              </div>
+              <div class="events__slide-content">
+                <div class="events__slide-type">Выставка</div>
+                <h2>Выставка «ШАНС КОГО»</h2>
+                <p>27 августа в Музее-усадьбе П.П.Семёнова-Тян-Шанского состоялось открытие выставки работ по итогу
+                  пленэра
+                  творческой мастерской «ШАНС КОГО».</p>
+                <time class="events__slide-date" datetime="2021-08-27">27 августа 2021</time>
+              </div>
+            </a>
+          </li>
+          {%- endfor %}
+        </ul>
+
+        <a class="events__all-link  events__all-link--always-vissible" href="#">Показать еще</a>
+      </div>
+    </div>
+    <div class="content__filter">
+      <p class="content__filter-text">Архив новостей</p>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,45 @@
+.breadcrumbs {
+  @include wrapper;
+  margin-bottom: 30px;
+
+  @media ($tablet) {
+    margin-bottom: 70px;
+  }
+}
+
+.breadcrumbs__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    margin: 0 15px;
+    background-color: #8dbda0;
+    border-radius: 50%;
+  }
+
+  &:last-child {
+    color: #8dbda0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  a {
+    color: inherit;
+  }
+}

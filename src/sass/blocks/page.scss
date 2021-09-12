@@ -9,6 +9,10 @@
   display: flex;
   flex-direction: column;
   font-family: $b-font;
+
+  &--invert {
+    background-color: #e4f0e9;
+  }
 }
 
 .page__main {

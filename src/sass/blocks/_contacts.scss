@@ -4,6 +4,21 @@
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100%;
+
+  @media (max-width: 767px) {
+    margin-bottom: 100px;
+    background-position: center bottom 80px;
+  }
+
+  &--inner {
+    margin-bottom: 0;
+    margin-bottom: -25px;
+    padding-top: 30px;
+
+    @media ($tablet) {
+      padding-top: 70px;
+    }
+  }
 }
 
 .contacts__wrapper {
@@ -18,6 +33,7 @@
   @media (max-width: 767px) {
     row-gap: 30px;
     padding-bottom: 0;
+    display: block;
   }
 }
 
@@ -31,6 +47,8 @@
 
   @media (max-width: 767px) {
     grid-column: 1/-1;
+    font-size: 26px;
+    line-height: 32px;
   }
 }
 
@@ -56,9 +74,18 @@
     background-color: #3369a7;
   }
 
+  &--mobile {
+    display: none;
+  }
+
   @media (max-width: 767px) {
     grid-column: 1/-1;
     margin-left: 0;
+    display: none;
+
+    &--mobile {
+      display: flex;
+    }
   }
 }
 
@@ -89,9 +116,24 @@
 
   h3 {
     margin: 0;
+    margin-top: 150px;
     margin-bottom: 20px;
     font-size: 24px;
     line-height: 30px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 35px;
+
+      &:first-child {
+        margin-top: 35px;
+      }
+    }
   }
 
   h4 {
@@ -116,6 +158,11 @@
     a {
       color: inherit;
       text-decoration: underline;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 12px;
+      line-height: 16px;
     }
   }
 

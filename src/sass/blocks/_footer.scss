@@ -24,12 +24,17 @@
   display: grid;
   row-gap: 20px;
   padding-bottom: 70px;
+  background-image: url("../images/footer-signature.svg");
+  background-position: right bottom 25%;
+  background-repeat: no-repeat;
+  background-size: auto;
 
   @media ($desktop) {
     display: grid;
     grid-template-columns: repeat(12, [col] 1fr);
     column-gap: 40px;
     row-gap: 90px;
+    background-position: right bottom 5%;
   }
 }
 
@@ -66,8 +71,46 @@
   }
 }
 
-.footer__nav-list {
-  @include list-reset;
+.footer__nav-col {
+  a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #597263;
+  }
+
+  @media (max-width: 767px) {
+    position: relative;
+    margin-bottom: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 5px;
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-top: 2px solid #587162;
+      border-right: 2px solid #587162;
+      transform: rotate(135deg);
+    }
+
+    &:hover {
+      &::after {
+        transform: rotate(-45deg);
+      }
+      .footer__nav-sublist {
+        display: block;
+      }
+    }
+
+    &--no-sublist {
+      &::after {
+        display: none;
+      }
+    }
+  }
 }
 
 .footer__nav-item {
@@ -75,14 +118,6 @@
   font-size: 14px;
   line-height: 18px;
   color: #000000;
-
-  &:first-child {
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 27px;
-    color: #597263;
-  }
 
   &:last-child {
     margin-bottom: 0;
@@ -94,6 +129,22 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 28px;
+  }
+}
+
+.footer__nav-sublist {
+  @include list-reset;
+  padding-top: 30px;
+
+  @media (max-width: 767px) {
+    display: none;
+    padding-top: 20px;
   }
 }
 
@@ -136,9 +187,21 @@
   flex-wrap: wrap;
   gap: 40px;
 
+  @media (max-width: 767px) {
+    gap: 10px;
+    margin-bottom: 47px;
+    padding-top: 133px;
+  }
+
   @media ($desktop) {
     grid-row: 2/3;
     grid-column: 6 / span 7;
+  }
+}
+
+.footer__nav-link-item {
+  @media (max-width: 767px) {
+    width: 100%;
   }
 }
 

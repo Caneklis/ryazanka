@@ -9,7 +9,10 @@ description: Description index
 
 <section class="about">
   <div class="about__img  parallax">
-    <img class="thumbnail" src="images/about-pic-2.png" alt="">
+    <picture>
+      <source srcset="images/about-pic-2.png" media="(min-width: 768px)">
+      <img class="thumbnail" src="images/about-bg-mobile.png" alt="MDN">
+    </picture>
   </div>
   <div class="about__wrapper">
     <div class="about__text">
@@ -80,6 +83,8 @@ description: Description index
         </svg>
       </div>
     </div>
+
+    <a class="events__all-link  events__all-link--mobile" href="#">Все новости</a>
   </div>
 </section>
 
@@ -139,6 +144,8 @@ description: Description index
         </svg>
       </div>
     </div>
+
+    <a class="souvenirs__all-link  souvenirs__all-link--mobile" href="#">Все сувениры</a>
   </div>
 </section>
 
@@ -178,10 +185,12 @@ description: Description index
       </table>
       <img src="images/signature.svg" alt="Изображение подписи" class="contacts__signature">
     </div>
+
+    <a class="contacts__link  contacts__link--mobile" href="#">Подробнее</a>
   </div>
 </section>
 
-<section class="partners  parallax">
+<section class="partners  ">
   <div class="partners__wrapper">
     <ul class="partners__list">
       <li class="partners__item"><a href="#"><img src="images/partners/minkult.svg" alt=""></a></li>
@@ -194,6 +203,11 @@ description: Description index
       <li class="partners__item"><a href="#"><img src="images/partners/kultforum-spb.svg" alt=""></a></li>
       <li class="partners__item"><a href="#"><img src="images/partners/eche-kakoe-to-logo.svg" alt=""></a></li>
     </ul>
+
+    <div class="partners__parallax">
+      <img class="thumbnail" src="images/partners-bg.png" alt="">
+
+    </div>
   </div>
 </section>
 
