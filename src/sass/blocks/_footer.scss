@@ -133,8 +133,9 @@
 
   @media (max-width: 767px) {
     margin-bottom: 10px;
-    font-size: 12px;
-    line-height: 28px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
   }
 }
 
@@ -145,6 +146,12 @@
   @media (max-width: 767px) {
     display: none;
     padding-top: 20px;
+  }
+
+  a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 

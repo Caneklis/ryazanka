@@ -13,6 +13,10 @@
   &--invert {
     background-color: #e4f0e9;
   }
+
+  &--fixed {
+    overflow-y: hidden;
+  }
 }
 
 .page__main {

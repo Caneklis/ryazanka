@@ -10,8 +10,8 @@ description: Description index
 <section class="about">
   <div class="about__img  parallax">
     <picture>
-      <source srcset="images/about-pic-2.png" media="(min-width: 768px)">
-      <img class="thumbnail" src="images/about-bg-mobile.png" alt="MDN">
+      <source srcset="/images/about-pic-2.png" media="(min-width: 768px)">
+      <img class="thumbnail-no-overflow" src="/images/about-bg-mobile.png" alt="MDN">
     </picture>
   </div>
   <div class="about__wrapper">
@@ -73,13 +73,13 @@ description: Description index
     <div class="events__slider-controls">
       <div class="swiper-button-prev">
         <svg viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
-          <use href="images/sprite_auto.svg#arrow-prev" width="20" height="13" fill="currentColor" />
+          <use href="/images/sprite_auto.svg#arrow-prev" width="20" height="13" fill="currentColor" />
         </svg>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-next">
         <svg viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
-          <use href="images/sprite_auto.svg#arrow-next" width="20" height="13" fill="currentColor" />
+          <use href="/images/sprite_auto.svg#arrow-next" width="20" height="13" fill="currentColor" />
         </svg>
       </div>
     </div>
@@ -91,12 +91,12 @@ description: Description index
 <section class="vr">
   <div class="vr__wrapper">
     <div class="vr__left">
-      <img class="thumbnail" src="images/vr-bg.png" alt="">
+      <img class="" src="/images/vr-bg.png" alt="">
       <a class="vr__tour-link" href="#"></a>
       <p>Музей-усадьба Рязанка. Гостиная (пример)</p>
     </div>
     <div class="vr__right">
-      <img src="images/vr-title.svg" alt="" class="vr__title">
+      <img src="/images/vr-title.svg" alt="" class="vr__title">
       <p>Посетите усадьбу не выходя из дома. Текст описания виртуального тура текст описания виртуального тура текст
         описания виртуального тура текст описания текст описания текст описания виртуального тура текст описания текст
         описания текст описания текст описания текст.</p>
@@ -118,7 +118,7 @@ description: Description index
           <h3>Футболка «VR Рязанка»</h3>
           <p>100 ₽</p>
         </div>
-        <div class="souvenirs__slide-photo"><img src="images/item-1.png" alt="Описание"></div>
+        <div class="souvenirs__slide-photo"><img src="/images/item-1.png" alt="Описание"></div>
         <a class="souvenirs__slide-link" href="#">Купить</a>
       </div>
       <div class="souvenirs__slide swiper-slide">
@@ -126,7 +126,7 @@ description: Description index
           <h3>Книга «Родина Петра Семенова-Тян-Шанского»</h3>
           <p>100 ₽</p>
         </div>
-        <div class="souvenirs__slide-photo"><img src="images/item-2.png" alt="Описание"></div>
+        <div class="souvenirs__slide-photo"><img src="/images/item-2.png" alt="Описание"></div>
         <a class="souvenirs__slide-link" href="#">Купить</a>
       </div>
       {%- endfor %}
@@ -134,13 +134,13 @@ description: Description index
     <div class="souvenirs__slider-controls">
       <div class="swiper-button-prev">
         <svg viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
-          <use href="images/sprite_auto.svg#arrow-prev" width="20" height="13" fill="currentColor" />
+          <use href="/images/sprite_auto.svg#arrow-prev" width="20" height="13" fill="currentColor" />
         </svg>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-next">
         <svg viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
-          <use href="images/sprite_auto.svg#arrow-next" width="20" height="13" fill="currentColor" />
+          <use href="/images/sprite_auto.svg#arrow-next" width="20" height="13" fill="currentColor" />
         </svg>
       </div>
     </div>
@@ -162,13 +162,13 @@ description: Description index
       <p>Липецкая область, Чаплыгинский район, дер. Рязанка, д 40</p>
       <p>
         <svg viewBox="0 0 18 18" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-          <use href="images/sprite_auto.svg#phone" fill="currentColor" />
+          <use href="/images/sprite_auto.svg#phone" fill="currentColor" />
         </svg>
         +7 905 689 99 09
       </p>
       <p>
         <svg viewBox="0 0 22 16" width="22" height="16" xmlns="http://www.w3.org/2000/svg">
-          <use href="images/sprite_auto.svg#mail" fill="currentColor" />
+          <use href="/images/sprite_auto.svg#mail" fill="currentColor" />
         </svg>
         <a href="#">info.ppsts@gmail.com</a>
       </p>
@@ -183,7 +183,7 @@ description: Description index
           <td>выходной</td>
         </tr>
       </table>
-      <img src="images/signature.svg" alt="Изображение подписи" class="contacts__signature">
+      <img src="/images/signature.svg" alt="Изображение подписи" class="contacts__signature">
     </div>
 
     <a class="contacts__link  contacts__link--mobile" href="#">Подробнее</a>
@@ -193,19 +193,19 @@ description: Description index
 <section class="partners  ">
   <div class="partners__wrapper">
     <ul class="partners__list">
-      <li class="partners__item"><a href="#"><img src="images/partners/minkult.svg" alt=""></a></li>
-      <li class="partners__item"><a href="#"><img src="images/partners/kulturarf.svg" alt=""></a></li>
-      <li class="partners__item"><a href="#"><img src="images/partners/upr-culturi.svg" alt=""></a></li>
-      <li class="partners__item"><a href="#"><img src="images/partners/logo-granti.svg" alt=""></a></li>
-      <li class="partners__item"><a href="#"><img src="images/partners/fond-vozr-usadbi.svg" alt=""></a></li>
-      <li class="partners__item"><a href="#"><img src="images/partners/liptur.svg" alt=""></a></li>
-      <li class="partners__item"><a href="#"><img src="images/partners/museii-rossii.svg" alt=""></a></li>
-      <li class="partners__item"><a href="#"><img src="images/partners/kultforum-spb.svg" alt=""></a></li>
-      <li class="partners__item"><a href="#"><img src="images/partners/eche-kakoe-to-logo.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="/images/partners/minkult.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="/images/partners/kulturarf.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="/images/partners/upr-culturi.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="/images/partners/logo-granti.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="/images/partners/fond-vozr-usadbi.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="/images/partners/liptur.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="/images/partners/museii-rossii.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="/images/partners/kultforum-spb.svg" alt=""></a></li>
+      <li class="partners__item"><a href="#"><img src="/images/partners/eche-kakoe-to-logo.svg" alt=""></a></li>
     </ul>
 
     <div class="partners__parallax">
-      <img class="thumbnail" src="images/partners-bg.png" alt="">
+      <img class="thumbnail" src="/images/partners-bg.png" alt="">
 
     </div>
   </div>

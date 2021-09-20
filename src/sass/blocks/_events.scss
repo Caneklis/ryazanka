@@ -28,10 +28,23 @@
   letter-spacing: 0.05em;
   color: #597263;
 
+  &--small {
+    color: #75af8c;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
   @media (max-width: 767px) {
     grid-column: 1/-1;
     font-size: 26px;
     line-height: 32px;
+  }
+
+  @media ($tablet) {
+    &--small {
+      font-size: 28px;
+      line-height: 36px;
+    }
   }
 }
 
@@ -223,20 +236,38 @@
       line-height: 16px;
     }
   }
+
+  @media ($tablet) {
+    display: grid;
+    align-items: flex-start;
+
+    .events__slide-date {
+      margin-top: auto;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.events__slide-date {
+  font-weight: 700;
+  color: #000000;
 }
 
 .events__slide-type {
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   max-width: max-content;
+  min-width: 100px;
   margin-bottom: 40px;
-  padding: 11px 34px 10px;
-  font-size: 16px;
-  line-height: 22px;
+  padding: 11px 5px 10px;
+  font-size: 12px;
+  line-height: 16px;
   color: #ffffff;
   border-radius: 3px;
   background: #a3c2af;
+  font-weight: 700;
 
   &--type-2 {
     background: #a5c2e4;
@@ -256,5 +287,14 @@
 
   &--type-6 {
     background: #7fb5f4;
+  }
+
+  @media ($tablet) {
+    min-width: 140px;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 22px;
   }
 }

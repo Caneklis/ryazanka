@@ -1,0 +1,66 @@
+.download__list {
+  @include list-reset;
+}
+
+.download__item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e4f0e9;
+    border-radius: 2px;
+    font-size: 10px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 20px;
+    color: #597263;
+    font-weight: 700;
+  }
+
+  &--doc {
+    &::before {
+      content: "DOC";
+    }
+  }
+
+  &--pdf {
+    &::before {
+      content: "PDF";
+    }
+  }
+
+  p {
+    color: #000000;
+  }
+
+  a {
+    font-size: 12px;
+    line-height: 16px;
+    color: #597263;
+    text-decoration: underline;
+  }
+
+  @media ($tablet) {
+    margin-bottom: 20px;
+    padding-left: 70px;
+
+    &::before {
+      width: 50px;
+      height: 25px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+    a {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
