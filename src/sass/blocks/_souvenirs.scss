@@ -147,12 +147,34 @@
   padding-top: 37px;
   padding-left: 40px;
   background: #ffffff;
-  box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   transition: $transition;
 
   &:hover {
     box-shadow: 0px 1px 40px #c2e7d0;
+  }
+
+  &.swiper-slide-active,
+  &.swiper-slide-next {
+    box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.1);
+
+    + .souvenirs__slide {
+      box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.1);
+      &:hover {
+        box-shadow: 0px 1px 40px #c2e7d0;
+      }
+
+      + .souvenirs__slide {
+        box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.1);
+        &:hover {
+          box-shadow: 0px 1px 40px #c2e7d0;
+        }
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 1px 40px #c2e7d0;
+    }
   }
 }
 

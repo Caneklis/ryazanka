@@ -184,10 +184,22 @@
   }
 }
 
+.events__slide {
+  &.swiper-slide-active,
+  &.swiper-slide-next {
+    .events__slide-link {
+      box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        box-shadow: 0px 1px 40px #c2e7d0;
+      }
+    }
+  }
+}
+
 .events__slide-link {
   display: grid;
   background: #ffffff;
-  box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   transition: $transition;
