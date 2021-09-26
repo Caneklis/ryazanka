@@ -64,9 +64,14 @@
   grid-column: col / span 6;
   margin-bottom: 42px;
 
+  @media (max-width: 1800px) {
+    max-width: 80%;
+  }
+
   @media (max-width: 1200px) {
     grid-column: col / span 10;
     color: #000;
+    max-width: 100%;
   }
 
   @media (max-width: 767px) {

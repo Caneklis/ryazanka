@@ -18,3 +18,117 @@
     color: #000;
   }
 }
+
+.fancybox__backdrop {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.fancybox__content {
+  img {
+    width: auto;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 100% !important;
+  }
+}
+
+.carousel__button {
+  color: #000;
+  border-radius: 0;
+
+  &.is-close {
+    color: #000;
+    border-radius: 0;
+    display: none;
+    svg {
+      width: 20px;
+      height: 20px;
+      pointer-events: none;
+      fill: red;
+      stroke: none;
+      stroke-linecap: round;
+      stroke-linejoin: bevel;
+      stroke-width: 0;
+    }
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    fill: red;
+    stroke: none;
+    stroke-linecap: round;
+    stroke-linejoin: bevel;
+    stroke-width: 0;
+    filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0.5));
+  }
+}
+
+.close-btn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  position: absolute;
+  right: 43px;
+  top: 37px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  z-index: 11;
+}
+
+.fancybox__nav .carousel__button.is-next {
+  right: 110px;
+
+  @media (max-width: 1199px) {
+    right: 20px;
+  }
+}
+.fancybox__nav .carousel__button.is-prev {
+  left: 110px;
+
+  @media (max-width: 1199px) {
+    left: 20px;
+  }
+}
+
+.fancybox__main-panel {
+  flex: 0 0 auto;
+  min-height: 0;
+  margin: auto;
+  position: relative;
+  display: grid;
+  width: 84.5vw;
+  padding: 60px 20px;
+  min-height: calc((80vw - 60px * 2));
+  background: #fff;
+
+  @media ($tablet) {
+    min-height: unset;
+    height: calc((100vw - 60px * 2) * 9 / 16);
+  }
+
+  @media ($desktop) {
+    padding: 60px 150px;
+  }
+}
+.fancybox__left-panel {
+  color: #222;
+  overflow: auto;
+  padding: 3rem;
+}
+
+.fancybox__spinner {
+  color: #222;
+}
+
+.fancybox__carousel {
+  overflow: hidden;
+  margin: 0;
+  position: static;
+}
+
+.fancybox__slide {
+  padding: 0;
+}

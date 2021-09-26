@@ -3,11 +3,12 @@
   background-image: url("../images/contacts-bg.png");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 100%;
+  background-size: contain;
 
   @media (max-width: 767px) {
     margin-bottom: 100px;
     background-position: center bottom 80px;
+    background-image: url("../images/contacts-bg-mobile.png");
   }
 
   &--inner {
