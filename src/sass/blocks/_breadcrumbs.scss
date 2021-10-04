@@ -42,4 +42,9 @@
   a {
     color: inherit;
   }
+
+  @media (max-width: 767px) {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }

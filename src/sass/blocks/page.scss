@@ -15,7 +15,8 @@
   }
 
   &--fixed {
-    overflow-y: hidden;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 }
 

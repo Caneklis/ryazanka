@@ -1,4 +1,6 @@
 .rexponsive-table {
+  margin-top: 30px;
+  margin-bottom: 40px;
   overflow-x: scroll;
 
   &::-webkit-scrollbar {
@@ -29,16 +31,16 @@
     th {
       text-align: left;
       font-weight: bold;
-      font-size: 12px;
-      line-height: 14px;
+      font-size: 14px;
+      line-height: 18px;
       /* or 117% */
 
       color: #597263;
     }
 
     td {
-      font-size: 12px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 18px;
       /* or 133% */
 
       color: #000000;

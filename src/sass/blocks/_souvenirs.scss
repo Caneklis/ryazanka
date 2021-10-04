@@ -2,7 +2,7 @@
   margin-bottom: 240px;
 
   @media (max-width: 767px) {
-    margin-bottom: 120px;
+    margin-bottom: 70px;
   }
 }
 
@@ -64,7 +64,11 @@
 
     &--mobile {
       display: flex;
+      width: 100%;
+      max-width: 100%;
       margin-top: 44px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

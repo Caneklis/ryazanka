@@ -132,3 +132,16 @@
 .fancybox__slide {
   padding: 0;
 }
+
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+.swiper-pagination-bullet {
+  -webkit-appearance: none;
+
+  &[role="button"] {
+    -webkit-appearance: none;
+    outline: none;
+  }
+}

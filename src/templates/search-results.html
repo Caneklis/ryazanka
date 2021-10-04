@@ -1,0 +1,45 @@
+---
+title: Результаты поиска
+description: Description index
+---
+{% extends "layouts/_layout-inner.html" %}
+
+{% block content %}
+
+{% include "./partials/_breadcrumbs.html" %}
+
+<section class="search">
+  <div class="search__wrapper">
+    <form class="search__form" action="#" method="GET">
+      <div class="search__form-field">
+        <input type="search" placeholder="Введите запрос...">
+        <button class="search__form-btn" type="submit" aria-label="Найти">
+          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <use href="/images/sprite_auto.svg#search" />
+          </svg>
+        </button>
+      </div>
+    </form>
+
+    <header class="search__header">
+      <p>Вы искали</p>
+      <h1>«Шанс Кого»</h1>
+    </header>
+
+    <ul class="search__results-list">
+      {% for item in range(0, 4) -%}
+      <li class="search__results-item">
+        <h2>Выставка «ШАНС КОГО»</h2>
+        <p>27 августа в Музее-усадьбе П.П.Семёнова-Тян-Шанского состоялось открытие выставки работ по итогу пленэра
+          творческой мастерской «ШАНС КОГО».</p>
+        <time datetime="2021-08-27">27 августа 2021</time>
+      </li>
+      {%- endfor %}
+    </ul>
+
+    <a class="search__load-more" href="#">Показать еще</a>
+  </div>
+</section>
+
+
+{% endblock %}

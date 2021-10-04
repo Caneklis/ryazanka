@@ -1,11 +1,12 @@
 .content__wrapper {
   @include wrapper;
-  padding-bottom: 90px;
+  padding-bottom: 30px;
 
   @media ($tablet) {
     display: grid;
     grid-template-columns: repeat(12, [col] 1fr);
     column-gap: 40px;
+    padding-bottom: 40px;
   }
 }
 

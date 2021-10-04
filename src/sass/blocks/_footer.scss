@@ -2,15 +2,25 @@
   position: relative;
   margin-top: 35px;
   background-color: #e4f0e9;
-  border-top: 4px solid;
-  border-image-slice: 1;
-  border-width: 5px;
-  border-image-source: linear-gradient(to right, #587162, #61b893);
+  // border-top: 4px solid #587162;
+  // border-image-slice: 1;
+  // border-image-source: linear-gradient(to right, #587162, #61b893);
 
   &::before {
     content: "";
     position: absolute;
     top: -11px;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 4px;
+    background: linear-gradient(to right, #587162, #61b893);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
     left: 0;
     right: 0;
     display: block;
@@ -25,7 +35,7 @@
   row-gap: 20px;
   padding-bottom: 70px;
   background-image: url("../images/footer-signature.svg");
-  background-position: right bottom 25%;
+  background-position: right bottom 45%;
   background-repeat: no-repeat;
   background-size: auto;
 
@@ -43,14 +53,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -100px;
+  width: 140px;
+  margin: 0 auto;
+  margin-top: -30px;
 
   @media ($tablet) {
+    width: 240px;
     align-items: flex-start;
+    margin-top: -100px;
   }
 
   @media ($desktop) {
-    margin-top: -100px;
+    margin-top: -45px;
     grid-row: 1/2;
     grid-column: col / span 2;
   }

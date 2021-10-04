@@ -1,0 +1,89 @@
+.error-page {
+  display: grid;
+  min-height: 478px;
+  background-image: url("../images/error-page-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 240px;
+  background-position: right center;
+
+  @media ($tablet) {
+    background-image: url("../images/error-page-bg.jpg");
+    background-size: 50%;
+    background-position-y: center;
+  }
+
+  @media ($desktop) {
+    min-height: 824px;
+  }
+}
+
+.error-page__wrapper {
+  @include wrapper;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 60px;
+
+  @media ($tablet) {
+    justify-content: center;
+  }
+}
+
+.error-page__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  color: #75af8c;
+
+  @media ($tablet) {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.error-page__text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #597263;
+
+  @media ($tablet) {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+.error-page__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 280px;
+  width: max-content;
+  margin-top: auto;
+  padding: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #597263;
+  border: 2px solid #597263;
+  border-radius: 5px;
+  transition: $transition;
+
+  &:hover {
+    background-color: #597263;
+    color: #fff;
+  }
+
+  @media ($tablet) {
+    min-width: 180px;
+    margin-top: 80px;
+    padding: 13px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}

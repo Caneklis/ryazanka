@@ -12,6 +12,16 @@
   display: grid;
   grid-template-columns: repeat(12, [col] 1fr);
   column-gap: 40px;
+  padding-bottom: 65px;
+
+  @media ($tablet) {
+    padding-bottom: 125px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
 }
 
 .partners__list {
@@ -26,19 +36,18 @@
 
   @media (max-width: 767px) {
     grid-column: 1 / -1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     row-gap: 40px;
-    max-width: 280px;
   }
 }
 
 .partners__item {
   @media (max-width: 767px) {
-    width: 45%;
-    max-width: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
       max-width: 100%;
@@ -62,13 +71,15 @@
   // }
 
   @media (max-width: 767px) {
-    position: relative;
-    // position: static;
+    // position: relative;
+    position: static;
     margin-top: 40px;
-    grid-column: 1 / -1;
-    width: 100%;
-    right: 0;
-    max-width: 350px;
-    // margin-left: auto;
+    grid-column: 1/-1;
+    width: 300px;
+    margin-right: -20px;
+    margin-left: auto;
+
+    img {
+    }
   }
 }
