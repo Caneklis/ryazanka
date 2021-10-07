@@ -2,9 +2,8 @@ import Swiper from "../../node_modules/swiper/swiper-bundle";
 import { Fancybox } from "@fancyapps/ui";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // eslint-disable-next-line no-console
-  console.log("DOM полностью загружен и разобран");
   require("./modules/main-nav");
+  require("./modules/video");
 
   const searchFormToggle = document.querySelector(".header__search-btn");
   const searcForm = document.querySelector(".header__search");
