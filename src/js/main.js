@@ -189,6 +189,9 @@ document.addEventListener("DOMContentLoaded", () => {
     //     console.log(`fancybox #${fancybox.id} is ready!`);
     //   },
     // },
+    Thumbs: {
+      autoStart: false,
+    },
     animated: false,
     showClass: false,
     hideClass: false,

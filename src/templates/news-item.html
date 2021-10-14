@@ -2,29 +2,34 @@
 title: 05 - Страница события / новости
 description: Description index
 ---
-{% extends "layouts/_layout-inner.html" %}
 
-{% block content %}
-
-{% include "./partials/_breadcrumbs.html" %}
+{% extends "layouts/_layout-inner.html" %} {% block content %} {% include
+"./partials/_breadcrumbs.html" %}
 
 <section class="content">
-
   <section class="news-page">
-    <article class="textpage  news-page__article">
+    <article class="textpage news-page__article">
       <div class="news-page__head">
-        <h1 class="news-page__title">Выставка «ШАНС КОГО» </h1>
-        <time class="news-page__date" datetime="2021-08-27">27 августа 2021</time>
+        <h1 class="news-page__title">Выставка «ШАНС КОГО»</h1>
+        <time class="news-page__date" datetime="2021-08-27"
+          >27 августа 2021</time
+        >
       </div>
-      <div class="news-page__slider  news-page__slider--main">
+      <div class="news-page__slider news-page__slider--main">
         <div class="swiper-wrapper">
           {% for item in range(0, 6) %}
-          <div class="news-page__slider-item  swiper-slide">
+          <div class="news-page__slider-item swiper-slide">
             <div class="news-page__slider-photo">
-              <picture>
-                <source srcset="https://via.placeholder.com/660x412" media="(min-width: 767px)">
-                <img src="https://via.placeholder.com/280x175" alt="Описание фотографии">
-              </picture>
+              <a
+                href="https://via.placeholder.com/400x1080"
+                data-fancybox="gallery"
+              >
+                <!-- Я не хнаю какой сюда размер поставить, в макете 1160*800, скорее всего не больше 800 по высоте. Тут вертикальные картинки, ниже в слайдере горизонтальные. -->
+                <img
+                  src="https://via.placeholder.com/380x270"
+                  alt="Описание фотографии"
+                />
+              </a>
             </div>
             <p>Музей-усадьба П.П. Семенова-Тян-Шанского. Главный дом</p>
           </div>
@@ -33,38 +38,70 @@ description: Description index
         <div class="news-page__slider-controls">
           <button class="news-page__slider-prev">
             <svg viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
-              <use href="/images/sprite_auto.svg#arrow-prev" width="20" height="13" fill="currentColor" />
+              <use
+                href="/images/sprite_auto.svg#arrow-prev"
+                width="20"
+                height="13"
+                fill="currentColor"
+              />
             </svg>
           </button>
           <div class="news-page__slider-pagination"></div>
           <button class="news-page__slider-next">
             <svg viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
-              <use href="/images/sprite_auto.svg#arrow-next" width="20" height="13" fill="currentColor" />
+              <use
+                href="/images/sprite_auto.svg#arrow-next"
+                width="20"
+                height="13"
+                fill="currentColor"
+              />
             </svg>
           </button>
         </div>
       </div>
-      <div class="textpage__text  news-page__text">
-        <p>27 августа в Музее-усадьбе П.П.Семёнова-Тян-Шанского состоялось открытие выставки работ по итогу пленэра
-          творческой мастерской "ШАНС КОГО".</p>
-        <p>Открытие посетили главные герои пленэра - наши дорогие художники Весёлкин П. Е., Циряниди В. Ф., Большакова
-          А. А., а также представители сферы культуры Чаплыгинского района: Повалука Валентина Валентиновна, (директор
-          Центра развития туризма) и Тимофеева Елена Ивановна (заведующая отделом культуры Чаплыгинского района).</p>
-        <p>Выставка будет доступна к посещению до 1 ноября 2021 года. Обязательно приходите посмотреть на Рязанку и её
-          окрестности через призму живописи. В экспозиции представлены работы Агафонова В. И., Весёлкина П. Е., Викулина
-          С. В., Леликова В. И., Циряниди В. Ф., Наливкиной Е. Ю., Большаковой А. А., Конюховой Н. Ю. и студентов ЛОКИ
-          им. К. Н. Игумнова.</p>
-        <p>Добрая традиция пленэров на этом не закончится. Ждем, что золотая осень подарит нам красивые виды, которые
-          художники вновь запечатлеют в своих работах.</p>
-        <p>Научное наследие П.П. Семёнова-Тян-Шанского, помимо монографий и статей, включает 11 томов издания «Россия.
-          Полное географическое описание нашего отечества», 19 томов издания «Живописная Россия», представляющее
-          «подробное, всестороннее художественно-научное описание Российской империи и народов ее населяющих», 5 томов
-          «Географо-статистического словаря Российской империи», в котором были собраны все сведения о географических
-          названиях на территории страны. Деятельность учёного была многогранной, примечательно, что он также был
-          автором двухтомного издания «Этюды по истории нидерландской живописи» и выдающимся коллекционером.
-          Замечательное собрание из 719 картин малых голландцев и более 3000 графических листов было передано им в 1910
-          г. в дар Эрмитажу, а уникальная коллекция (более чем 700 000 насекомых) подарена наследниками учёного
-          Зоологическому музею. Он был одним из первых в России, кто поставил искусствоведение на научную основу.</p>
+      <div class="textpage__text news-page__text">
+        <p>
+          27 августа в Музее-усадьбе П.П.Семёнова-Тян-Шанского состоялось
+          открытие выставки работ по итогу пленэра творческой мастерской "ШАНС
+          КОГО".
+        </p>
+        <p>
+          Открытие посетили главные герои пленэра - наши дорогие художники
+          Весёлкин П. Е., Циряниди В. Ф., Большакова А. А., а также
+          представители сферы культуры Чаплыгинского района: Повалука Валентина
+          Валентиновна, (директор Центра развития туризма) и Тимофеева Елена
+          Ивановна (заведующая отделом культуры Чаплыгинского района).
+        </p>
+        <p>
+          Выставка будет доступна к посещению до 1 ноября 2021 года. Обязательно
+          приходите посмотреть на Рязанку и её окрестности через призму
+          живописи. В экспозиции представлены работы Агафонова В. И., Весёлкина
+          П. Е., Викулина С. В., Леликова В. И., Циряниди В. Ф., Наливкиной Е.
+          Ю., Большаковой А. А., Конюховой Н. Ю. и студентов ЛОКИ им. К. Н.
+          Игумнова.
+        </p>
+        <p>
+          Добрая традиция пленэров на этом не закончится. Ждем, что золотая
+          осень подарит нам красивые виды, которые художники вновь запечатлеют в
+          своих работах.
+        </p>
+        <p>
+          Научное наследие П.П. Семёнова-Тян-Шанского, помимо монографий и
+          статей, включает 11 томов издания «Россия. Полное географическое
+          описание нашего отечества», 19 томов издания «Живописная Россия»,
+          представляющее «подробное, всестороннее художественно-научное описание
+          Российской империи и народов ее населяющих», 5 томов
+          «Географо-статистического словаря Российской империи», в котором были
+          собраны все сведения о географических названиях на территории страны.
+          Деятельность учёного была многогранной, примечательно, что он также
+          был автором двухтомного издания «Этюды по истории нидерландской
+          живописи» и выдающимся коллекционером. Замечательное собрание из 719
+          картин малых голландцев и более 3000 графических листов было передано
+          им в 1910 г. в дар Эрмитажу, а уникальная коллекция (более чем 700 000
+          насекомых) подарена наследниками учёного Зоологическому музею. Он был
+          одним из первых в России, кто поставил искусствоведение на научную
+          основу.
+        </p>
 
         <div class="rexponsive-table">
           <table>
@@ -81,7 +118,10 @@ description: Description index
             <tr>
               <td>Николай Николаевич Семенов</td>
               <td>1796 - 1875</td>
-              <td>Государственный деятель, Вятский гражданский губернатор 1851-1857 гг. (длинное поле)</td>
+              <td>
+                Государственный деятель, Вятский гражданский губернатор
+                1851-1857 гг. (длинное поле)
+              </td>
             </tr>
             <tr>
               <td>Василий Николаевич Семенов</td>
@@ -91,33 +131,49 @@ description: Description index
             <tr>
               <td>Николай Петрович Семенов</td>
               <td>1823 - 1904</td>
-              <td>Государственный деятель, историк, ботаник, поэт
-                и переводчик. Действительный член Императорского Русского географического общества.</td>
+              <td>
+                Государственный деятель, историк, ботаник, поэт и переводчик.
+                Действительный член Императорского Русского географического
+                общества.
+              </td>
             </tr>
           </table>
         </div>
 
         <ul>
-          <li>11 томов издания «Россия. Полное географическое описание нашего отечества»</li>
+          <li>
+            11 томов издания «Россия. Полное географическое описание нашего
+            отечества»
+          </li>
 
-          <li>19 томов издания
-            «Живописная Россия», представляющее
-            «подробное, всестороннее художественно-научное описание Российской империи и народов ее населяющих»</li>
+          <li>
+            19 томов издания «Живописная Россия», представляющее «подробное,
+            всестороннее художественно-научное описание Российской империи и
+            народов ее населяющих»
+          </li>
 
-          <li>5 томов «Географо-статистического словаря Российской империи», в котором были собраны все сведения о
-            географических названиях на территории страны</li>
+          <li>
+            5 томов «Географо-статистического словаря Российской империи», в
+            котором были собраны все сведения о географических названиях на
+            территории страны
+          </li>
         </ul>
       </div>
 
-      <div class="news-page__slider  news-page__slider--gallery">
+      <div class="news-page__slider news-page__slider--gallery">
         <div class="swiper-wrapper">
           {% for item in range(0, 6) %}
-          <div class="news-page__slider-item  swiper-slide">
+          <div class="news-page__slider-item swiper-slide">
             <div class="news-page__slider-photo">
-              <picture>
-                <source srcset="https://via.placeholder.com/380x270" media="(min-width: 767px)">
-                <img src="https://via.placeholder.com/280x198" alt="Описание фотографии">
-              </picture>
+              <a
+                href="https://via.placeholder.com/1160x880"
+                data-fancybox="gallery"
+              >
+                <img
+                  src="https://via.placeholder.com/380x270"
+                  alt="Описание фотографии"
+                />
+              </a>
             </div>
           </div>
           {% endfor %}
@@ -125,34 +181,57 @@ description: Description index
         <div class="news-page__slider-controls">
           <button class="news-page__slider-prev">
             <svg viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
-              <use href="/images/sprite_auto.svg#arrow-prev" width="20" height="13" fill="currentColor" />
+              <use
+                href="/images/sprite_auto.svg#arrow-prev"
+                width="20"
+                height="13"
+                fill="currentColor"
+              />
             </svg>
           </button>
           <div class="news-page__slider-pagination"></div>
           <button class="news-page__slider-next">
             <svg viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
-              <use href="/images/sprite_auto.svg#arrow-next" width="20" height="13" fill="currentColor" />
+              <use
+                href="/images/sprite_auto.svg#arrow-next"
+                width="20"
+                height="13"
+                fill="currentColor"
+              />
             </svg>
           </button>
         </div>
       </div>
 
-      <div class="textpage__text  news-page__text">
-        <p>Научное наследие П.П. Семёнова-Тян-Шанского, помимо монографий и статей, включает 11 томов издания «Россия.
-          Полное географическое описание нашего отечества», 19 томов издания «Живописная Россия», представляющее
-          «подробное, всестороннее художественно-научное описание Российской империи и народов ее населяющих», 5 томов
-          «Географо-статистического словаря Российской империи», в котором были собраны все сведения о географических
-          названиях на территории страны. Деятельность учёного была многогранной, примечательно, что он также был
-          автором двухтомного издания «Этюды по истории нидерландской живописи» и выдающимся коллекционером.
-          Замечательное собрание из 719 картин малых голландцев и более 3000 графических листов было передано им в 1910
-          г. в дар Эрмитажу, а уникальная коллекция (более чем 700 000 насекомых) подарена наследниками учёного
-          Зоологическому музею. Он был одним из первых в России, кто поставил искусствоведение на научную основу.</p>
+      <div class="textpage__text news-page__text">
+        <p>
+          Научное наследие П.П. Семёнова-Тян-Шанского, помимо монографий и
+          статей, включает 11 томов издания «Россия. Полное географическое
+          описание нашего отечества», 19 томов издания «Живописная Россия»,
+          представляющее «подробное, всестороннее художественно-научное описание
+          Российской империи и народов ее населяющих», 5 томов
+          «Географо-статистического словаря Российской империи», в котором были
+          собраны все сведения о географических названиях на территории страны.
+          Деятельность учёного была многогранной, примечательно, что он также
+          был автором двухтомного издания «Этюды по истории нидерландской
+          живописи» и выдающимся коллекционером. Замечательное собрание из 719
+          картин малых голландцев и более 3000 графических листов было передано
+          им в 1910 г. в дар Эрмитажу, а уникальная коллекция (более чем 700 000
+          насекомых) подарена наследниками учёного Зоологическому музею. Он был
+          одним из первых в России, кто поставил искусствоведение на научную
+          основу.
+        </p>
 
         <div class="news-page__share">
-          <p>Поделиться новостью </p>
+          <p>Поделиться новостью</p>
           <script src="https://yastatic.net/share2/share.js"></script>
-          <div class="ya-share2" data-bare data-curtain data-color-scheme="whiteblack"
-            data-services="vkontakte,facebook"></div>
+          <div
+            class="ya-share2"
+            data-bare
+            data-curtain
+            data-color-scheme="whiteblack"
+            data-services="vkontakte,facebook"
+          ></div>
         </div>
       </div>
     </article>
@@ -160,7 +239,7 @@ description: Description index
 
   <section class="events">
     <div class="events__wrapper">
-      <h2 class="events__title  events__title--small">Читайте также</h2>
+      <h2 class="events__title events__title--small">Читайте также</h2>
     </div>
     <div class="events__slider">
       <div class="swiper-wrapper">
@@ -168,15 +247,22 @@ description: Description index
         <div class="events__slide swiper-slide">
           <a class="events__slide-link" href="#">
             <div class="events__slide-photo">
-              <img src="https://via.placeholder.com/380x380" alt="Описание изображения">
+              <img
+                src="https://via.placeholder.com/380x380"
+                alt="Описание изображения"
+              />
             </div>
             <div class="events__slide-content">
               <div class="events__slide-type">Выставка</div>
               <h2>Выставка «ШАНС КОГО»</h2>
-              <p>27 августа в Музее-усадьбе П.П.Семёнова-Тян-Шанского состоялось открытие выставки работ по итогу
-                пленэра
-                творческой мастерской «ШАНС КОГО».</p>
-              <time class="events__slide-date" datetime="2021-08-27">27 августа 2021</time>
+              <p>
+                27 августа в Музее-усадьбе П.П.Семёнова-Тян-Шанского состоялось
+                открытие выставки работ по итогу пленэра творческой мастерской
+                «ШАНС КОГО».
+              </p>
+              <time class="events__slide-date" datetime="2021-08-27"
+                >27 августа 2021</time
+              >
             </div>
           </a>
         </div>
@@ -184,16 +270,24 @@ description: Description index
         <div class="events__slide swiper-slide">
           <a class="events__slide-link" href="#">
             <div class="events__slide-photo">
-              <img src="https://via.placeholder.com/380x380" alt="Описание изображения">
+              <img
+                src="https://via.placeholder.com/380x380"
+                alt="Описание изображения"
+              />
             </div>
             <div class="events__slide-content">
-              <div class="events__slide-type  events__slide-type--type-2 ">Мероприятие</div>
+              <div class="events__slide-type events__slide-type--type-2">
+                Мероприятие
+              </div>
               <h2>Фестиваль-погружение «Тайны усадьбы»</h2>
-              <p>31 июля 2021 года - особенный день
-                в усадьбе. Долгие месяцы подготовки
-                для того, чтобы погрузиться хотя бы
-                на один день в атмосферу 19 века.</p>
-              <time class="events__slide-date" datetime="2021-08-04">4 августа 2021</time>
+              <p>
+                31 июля 2021 года - особенный день в усадьбе. Долгие месяцы
+                подготовки для того, чтобы погрузиться хотя бы на один день в
+                атмосферу 19 века.
+              </p>
+              <time class="events__slide-date" datetime="2021-08-04"
+                >4 августа 2021</time
+              >
             </div>
           </a>
         </div>
@@ -202,22 +296,32 @@ description: Description index
       <div class="events__slider-controls">
         <div class="swiper-button-prev">
           <svg viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
-            <use href="/images/sprite_auto.svg#arrow-prev" width="20" height="13" fill="currentColor" />
+            <use
+              href="/images/sprite_auto.svg#arrow-prev"
+              width="20"
+              height="13"
+              fill="currentColor"
+            />
           </svg>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next">
           <svg viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
-            <use href="/images/sprite_auto.svg#arrow-next" width="20" height="13" fill="currentColor" />
+            <use
+              href="/images/sprite_auto.svg#arrow-next"
+              width="20"
+              height="13"
+              fill="currentColor"
+            />
           </svg>
         </div>
       </div>
 
-      <a class="events__all-link  events__all-link--mobile" href="#">Все новости</a>
+      <a class="events__all-link events__all-link--mobile" href="#"
+        >Все новости</a
+      >
     </div>
   </section>
 </section>
-
-
 
 {% endblock %}
