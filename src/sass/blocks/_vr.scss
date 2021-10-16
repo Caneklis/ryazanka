@@ -129,10 +129,16 @@
   margin-bottom: 60px;
 }
 
+.vr__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 38px;
+  margin-top: 50px;
+}
+
 .vr__link {
   position: relative;
   z-index: 2;
-  margin-top: 50px;
   font-size: 18px;
   line-height: 25px;
   display: flex;
@@ -142,15 +148,25 @@
   width: max-content;
   padding: 11px 34px 10px;
   font-weight: bold;
-  color: #3369a7;
+  color: #fff;
   border: 2px solid #3369a7;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #3369a7;
   transition: $transition;
 
   &:hover {
-    background-color: #3369a7;
-    color: #fff;
+    color: #3369a7;
+    background-color: #fff;
+  }
+
+  &--white {
+    color: #3369a7;
+    background-color: #fff;
+
+    &:hover {
+      background-color: #3369a7;
+      color: #fff;
+    }
   }
 
   @media (max-width: 768px) {
