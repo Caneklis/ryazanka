@@ -207,6 +207,10 @@
 }
 
 .events__slide {
+  &--hidden {
+    display: none !important;
+  }
+
   &.swiper-slide-active,
   &.swiper-slide-next {
     .events__slide-link {
