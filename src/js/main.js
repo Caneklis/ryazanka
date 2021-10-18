@@ -182,6 +182,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  Fancybox.defaults.ScrollLock = false;
+
   Fancybox.bind("[data-fancybox=gallery]", {
     groupAll: true, // Group all items
     // on: {
@@ -192,6 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
     Thumbs: {
       autoStart: false,
     },
+
     animated: false,
     showClass: false,
     hideClass: false,
@@ -221,8 +224,9 @@ document.addEventListener("DOMContentLoaded", () => {
     closeButton: "top",
 
     Image: {
-      zoom: false,
       fit: "contain",
+      zoom: false,
+      wheel: null,
     },
 
     template: {

@@ -111,6 +111,7 @@
 
   @media ($desktop) {
     padding: 60px 150px;
+    height: calc((100vw - 160px * 2) * 9 / 16);
   }
 }
 .fancybox__left-panel {
@@ -131,6 +132,14 @@
 
 .fancybox__slide {
   padding: 0;
+}
+
+.fancybox__caption {
+  color: #000;
+}
+
+.fancybox__content {
+  pointer-events: none;
 }
 
 input[type="search"] {
