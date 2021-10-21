@@ -296,6 +296,9 @@
 .textpage__gallery-slider-prev,
 .textpage__gallery-slider-next {
   width: 20px;
+  padding: 0;
+  background: #fff;
+  border: none;
 
   @media (max-width: 767px) {
     display: none;
