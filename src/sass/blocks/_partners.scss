@@ -44,6 +44,17 @@
 }
 
 .partners__item {
+  a {
+    img {
+      filter: grayscale(1);
+      transition: $transition;
+    }
+    &:hover {
+      img {
+        filter: grayscale(0);
+      }
+    }
+  }
   @media (max-width: 767px) {
     display: flex;
     justify-content: center;
@@ -57,19 +68,10 @@
 }
 
 .partners__parallax {
-  // grid-column: 8 / span 5;
-  // margin-right: -20px;
-
   width: 30%;
   position: absolute;
   right: 0;
   top: 20px;
-
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  // }
-
   @media (max-width: 767px) {
     // position: relative;
     position: static;
@@ -78,8 +80,5 @@
     width: 300px;
     margin-right: -20px;
     margin-left: auto;
-
-    img {
-    }
   }
 }
