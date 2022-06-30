@@ -171,6 +171,8 @@
   color: #597263;
   border: 2px solid #597263;
   border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
   transition: color 0.3s ease;
 
   &:hover {
@@ -203,17 +205,23 @@
   }
 }
 
-.ptomo__links-item {
+.promo__links-item {
   @media (max-width: 767px) {
     &:nth-child(1) {
       order: 1;
     }
+
     &:nth-child(2) {
       order: 3;
-      grid-column: 1 / -1;
+      // grid-column: 1 / -1;
     }
+
     &:nth-child(3) {
       order: 2;
+    }
+
+    &:nth-child(4) {
+      order: 4;
     }
   }
 }
