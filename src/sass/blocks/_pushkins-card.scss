@@ -1,0 +1,19 @@
+.pushkins-card {
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+
+  display: flex;
+  width: 260px;
+  padding-top: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #597263;
+  background-color: #fff;
+  z-index: 10;
+
+  @media ($desktop) {
+    right: 60px;
+    bottom: 200px;
+  }
+}
