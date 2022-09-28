@@ -1,0 +1,69 @@
+.bvi-active {
+  .promo__logo {
+    display: none;
+  }
+
+  .promo__main-content {
+    margin-top: 150px;
+  }
+
+  .header__wrapper {
+    justify-content: center;
+  }
+
+  .main-nav {
+    grid-column: 1 / span 12;
+  }
+
+  .header--main,
+  .promo {
+    min-height: unset;
+  }
+
+  .about__img-decr {
+    padding: 20px;
+  }
+
+  .souvenirs__slide-link {
+    background-color: #fff !important;
+  }
+
+  .contacts__text {
+    grid-column: 1 / -1;
+  }
+
+  .footer__logo {
+    margin-top: 0;
+
+    img {
+      display: none;
+    }
+  }
+
+  .footer__nav {
+    grid-column: 3 / 10;
+  }
+
+  .footer__nav-sublist a {
+    line-height: 1.6;
+  }
+
+  .main-nav__item:hover .main-nav__sublist {
+    left: 0;
+  }
+
+  .logo__link {
+    img {
+      display: none;
+    }
+  }
+
+  .header--invert {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .logo__text {
+    line-height: 1.6;
+  }
+}

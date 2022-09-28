@@ -1,6 +1,7 @@
 @import '../../node_modules/normalize.css/normalize';
 @import '../../node_modules/swiper/swiper-bundle';
 @import '../../node_modules/@fancyapps/ui/dist/fancybox';
+@import '../../node_modules/bvi/dist/css/bvi';
 @import 'global/variables';
 @import 'global/mixins';
 @import 'global/fonts';
@@ -28,3 +29,4 @@
 @import 'blocks/error-page';
 @import 'blocks/search';
 @import 'blocks/pushkins-card';
+@import 'global/bvi';

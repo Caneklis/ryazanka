@@ -1,42 +1,42 @@
-import Swiper from "../../node_modules/swiper/swiper-bundle";
-import { Fancybox } from "@fancyapps/ui";
+import Swiper from '../../node_modules/swiper/swiper-bundle';
+import { Fancybox } from '@fancyapps/ui';
 
-document.addEventListener("DOMContentLoaded", () => {
-  require("./modules/main-nav");
-  require("./modules/video");
+document.addEventListener('DOMContentLoaded', () => {
+  require('./modules/main-nav');
+  require('./modules/video');
 
-  const searchFormToggle = document.querySelector(".header__search-btn");
-  const searcForm = document.querySelector(".header__search");
+  const searchFormToggle = document.querySelector('.header__search-btn');
+  const searcForm = document.querySelector('.header__search');
 
-  searchFormToggle.addEventListener("click", () => {
-    let expanded = searchFormToggle.getAttribute("aria-expanded") === "true";
-    searchFormToggle.setAttribute("aria-expanded", !expanded);
-    searcForm.classList.add("header__search--open");
+  searchFormToggle.addEventListener('click', () => {
+    let expanded = searchFormToggle.getAttribute('aria-expanded') === 'true';
+    searchFormToggle.setAttribute('aria-expanded', !expanded);
+    searcForm.classList.add('header__search--open');
   });
 
-  document.addEventListener("click", function (e) {
+  document.addEventListener('click', function (e) {
     const target = e.target;
     const itsMenu = target == searcForm || searcForm.contains(target);
     // const its_btnMenu = target == btnMenu;
-    const menu_is_active = searcForm.classList.contains("header__search--open");
+    const menu_is_active = searcForm.classList.contains('header__search--open');
 
     if (!itsMenu && menu_is_active) {
-      searcForm.classList.remove("header__search--open");
+      searcForm.classList.remove('header__search--open');
     }
   });
 
-  const eventsSwiper = new Swiper(".events__slider", {
+  const eventsSwiper = new Swiper('.events__slider', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 20,
     // If we need pagination
     pagination: {
-      el: ".swiper-pagination",
+      el: '.swiper-pagination',
       clickable: true,
     }, // Navigation arrows
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     breakpoints: {
       768: {
@@ -50,18 +50,18 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  const souvenirsSwiper = new Swiper(".souvenirs__slider", {
+  const souvenirsSwiper = new Swiper('.souvenirs__slider', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 20,
     // If we need pagination
     pagination: {
-      el: ".swiper-pagination",
+      el: '.swiper-pagination',
       clickable: true,
     }, // Navigation arrows
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     breakpoints: {
       768: {
@@ -74,18 +74,18 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  const textpageGallerySwiper = new Swiper(".textpage__gallery-slider", {
+  const textpageGallerySwiper = new Swiper('.textpage__gallery-slider', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 20,
     // If we need pagination
     pagination: {
-      el: ".textpage__gallery-slider-pagination",
+      el: '.textpage__gallery-slider-pagination',
       clickable: true,
     }, // Navigation arrows
     navigation: {
-      nextEl: ".textpage__gallery-slider-next",
-      prevEl: ".textpage__gallery-slider-prev",
+      nextEl: '.textpage__gallery-slider-next',
+      prevEl: '.textpage__gallery-slider-prev',
     },
     breakpoints: {
       768: {
@@ -98,50 +98,50 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
-  const textpageLargeSwiper = new Swiper(".textpage__large-slider", {
+  const textpageLargeSwiper = new Swiper('.textpage__large-slider', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 20,
-    effect: "fade",
+    effect: 'fade',
     fadeEffect: {
       crossFade: true,
     },
     // If we need pagination
     pagination: {
-      el: ".textpage__large-slider-pagination",
+      el: '.textpage__large-slider-pagination',
       clickable: true,
     }, // Navigation arrows
     navigation: {
-      nextEl: ".textpage__large-slider-next",
-      prevEl: ".textpage__large-slider-prev",
+      nextEl: '.textpage__large-slider-next',
+      prevEl: '.textpage__large-slider-prev',
     },
   });
 
-  const newsPageSlider = new Swiper(".news-page__slider--main", {
+  const newsPageSlider = new Swiper('.news-page__slider--main', {
     speed: 400,
     slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
-      el: ".news-page__slider-pagination",
+      el: '.news-page__slider-pagination',
       clickable: true,
     }, // Navigation arrows
     navigation: {
-      nextEl: ".news-page__slider-next",
-      prevEl: ".news-page__slider-prev",
+      nextEl: '.news-page__slider-next',
+      prevEl: '.news-page__slider-prev',
     },
   });
 
-  const newsGallerySlider = new Swiper(".news-page__slider--gallery", {
+  const newsGallerySlider = new Swiper('.news-page__slider--gallery', {
     speed: 400,
     slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
-      el: ".news-page__slider-pagination",
+      el: '.news-page__slider-pagination',
       clickable: true,
     }, // Navigation arrows
     navigation: {
-      nextEl: ".news-page__slider-next",
-      prevEl: ".news-page__slider-prev",
+      nextEl: '.news-page__slider-next',
+      prevEl: '.news-page__slider-prev',
     },
     breakpoints: {
       768: {
@@ -155,15 +155,15 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  var image = document.getElementsByClassName("thumbnail");
+  var image = document.getElementsByClassName('thumbnail');
   new simpleParallax(image, {
     overflow: true,
     // delay: 0.5,
-    transition: "cubic-bezier(0,0,0,1)",
+    transition: 'cubic-bezier(0,0,0,1)',
     // maxTransition: 40,
   });
   var imageNoOverflow = document.getElementsByClassName(
-    "thumbnail-no-overflow"
+    'thumbnail-no-overflow'
   );
 
   new simpleParallax(imageNoOverflow, {
@@ -173,18 +173,18 @@ document.addEventListener("DOMContentLoaded", () => {
     // maxTransition: 40,
   });
 
-  const filterToggle = document.querySelector(".content__filter-toggle");
-  const contentFilterList = document.querySelector(".content__filter-list");
+  const filterToggle = document.querySelector('.content__filter-toggle');
+  const contentFilterList = document.querySelector('.content__filter-list');
 
   if (filterToggle) {
-    filterToggle.addEventListener("click", () => {
-      contentFilterList.classList.toggle("content__filter-list--open");
+    filterToggle.addEventListener('click', () => {
+      contentFilterList.classList.toggle('content__filter-list--open');
     });
   }
 
   Fancybox.defaults.ScrollLock = false;
 
-  Fancybox.bind("[data-fancybox=gallery]", {
+  Fancybox.bind('[data-fancybox=gallery]', {
     groupAll: true, // Group all items
     // on: {
     //   ready: (fancybox) => {
@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
     Carousel: {
       on: {
         change: (that) => {
-          console.log("blaaa");
+          console.log('blaaa');
         },
       },
       Panzoom: {
@@ -221,10 +221,10 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     Toolbar: false,
-    closeButton: "top",
+    closeButton: 'top',
 
     Image: {
-      fit: "contain",
+      fit: 'contain',
       zoom: false,
       wheel: null,
     },
@@ -238,11 +238,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     on: {
       initLayout: (fancybox) => {
-        const $mainPanel = document.createElement("div");
-        $mainPanel.classList.add("fancybox__main-panel");
+        const $mainPanel = document.createElement('div');
+        $mainPanel.classList.add('fancybox__main-panel');
 
-        const $closeBtn = document.createElement("button");
-        $closeBtn.classList.add("close-btn");
+        const $closeBtn = document.createElement('button');
+        $closeBtn.classList.add('close-btn');
 
         $closeBtn.innerHTML = `
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.3756 10L0 18.3756L1.6244 20L10 11.6244L18.3756 20L20 18.3756L11.6244 10L20 1.6244L18.3756 0L10 8.3756L1.6244 0L0 1.6244L8.3756 10Z" fill="#414141"/></svg>
@@ -295,4 +295,9 @@ document.addEventListener("DOMContentLoaded", () => {
   //   '</div>' +
   //   '</div>',
   //   });
+
+  const blindVersion = new isvek.Bvi({
+    target: '.blind-version',
+    fontSize: 24,
+  });
 });
