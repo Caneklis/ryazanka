@@ -1,8 +1,9 @@
 $base-color: #000;
-$b-font: "Nunito", Arial, sans-serif;
+$b-font: 'Nunito', Arial, sans-serif;
 
-$tablet: "min-width: 768px";
-$desktop: "min-width: 1440px";
+$tablet: 'min-width: 768px';
+$small: 'min-width: 1024px';
+$desktop: 'min-width: 1440px';
 
 $transition-time: 0.3s;
 $transition-type: ease-in-out;

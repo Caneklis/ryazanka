@@ -38,7 +38,7 @@
     }
   }
 
-  @media ($desktop) {
+  @media ($small) {
     display: none;
   }
 }
@@ -69,7 +69,7 @@
     padding-right: 20px;
     background-color: #e4f0e9;
 
-    @media ($desktop) {
+    @media ($small) {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -77,10 +77,14 @@
     }
   }
 
-  @media ($desktop) {
+  @media ($small) {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    column-gap: 25px;
+  }
+
+  @media ($desktop) {
     column-gap: 45px;
   }
 
@@ -103,7 +107,7 @@
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     right: 0;
     top: 5px;
@@ -125,7 +129,7 @@
     }
   }
 
-  @media ($desktop) {
+  @media ($small) {
     position: relative;
     margin-bottom: 0;
     padding-bottom: 10px;
@@ -215,7 +219,7 @@
   margin-top: 20px;
   margin-bottom: 38px;
 
-  @media ($desktop) {
+  @media ($small) {
     display: none;
   }
 }
