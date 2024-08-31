@@ -1,0 +1,91 @@
+---
+title: Афиша
+description: Description index
+---
+{% extends "layouts/_layout-inner.html" %}
+
+{% block content %}
+
+{% include "./partials/_breadcrumbs.html" %}
+
+<section class="content">
+  <div class="content__wrapper">
+    <h1 class="content__title">{{title}}</h1>
+
+    <section class="afisha">
+      <ul class="afisha__events">
+        <li class="afisha__event">
+          <div class="afisha__event-date">8 августа 2024</div>
+          <div class="afisha__event-pic">
+            <a href="#"><img src="/images/afisha/afisha-pic-1.png" alt="" loading="lazy"></a>
+          </div>
+          <h2>Фестиваль-погружение &laquo;Тайны усадьбы&raquo;</h2>
+          <div class="afisha__event-text">
+            <p>31&nbsp;июля 2021 года&nbsp;&mdash; особенный день в&nbsp;усадьбе. Долгие месяцы подготовки для того, чтобы погрузиться хотя&nbsp;бы на&nbsp;один день в&nbsp;атмосферу 19&nbsp;века.</p>
+          </div>
+          <a href="#" class="afisha__event-link">Читать подробнее</a>
+        </li>
+        <li class="afisha__event">
+          <div class="afisha__event-date">4 мая 2024</div>
+          <div class="afisha__event-pic">
+            <a href="#"><img src="/images/afisha/afisha-pic-2.png" alt="" loading="lazy"></a>
+          </div>
+          <h2>Арт-резиденция &laquo;Шанс КОГО&raquo;</h2>
+          <div class="afisha__event-text">
+            <p>31&nbsp;июля 2021 года&nbsp;&mdash; особенный день в&nbsp;усадьбе. Долгие месяцы подготовки для того, чтобы погрузиться.</p>
+          </div>
+          <a href="#" class="afisha__event-link">Читать подробнее</a>
+        </li>
+        <li class="afisha__event">
+          <div class="afisha__event-pic">
+            <a href="#"><img src="/images/afisha/afisha-pic-3.png" alt="" loading="lazy"></a>
+          </div>
+          <h2>День рождения усадьбы 2024</h2>
+          <div class="afisha__event-text">
+            <p>31 июля 2021 года - особенный день в усадьбе. Долгие месяцы подготовки для того, чтобы погрузиться хотя бы на один день в атмосферу 19 века. 31 июля 2021 года - особенный день в усадьбе. </p>
+          </div>
+          <a href="#" class="afisha__event-link">Читать подробнее</a>
+        </li>
+        <li class="afisha__event">
+          <div class="afisha__event-pic">
+            <a href="#"><img src="/images/afisha/afisha-pic-4.png" alt="" loading="lazy"></a>
+          </div>
+          <h2>Фестиваль-погружение &laquo;Тайны усадьбы&raquo;</h2>
+          <div class="afisha__event-text">
+            <p>31&nbsp;июля 2021 года&nbsp;&mdash; особенный день в&nbsp;усадьбе. Долгие месяцы подготовки для того, чтобы погрузиться хотя&nbsp;бы на&nbsp;один день в&nbsp;атмосферу 19&nbsp;века.</p>
+          </div>
+          <a href="#" class="afisha__event-link">Читать подробнее</a>
+        </li>
+        <li class="afisha__event">
+          <div class="afisha__event-pic">
+            <a href="#"><img src="/images/afisha/afisha-pic-1.png" alt="" loading="lazy"></a>
+          </div>
+          <h2>Арт-резиденция &laquo;Шанс КОГО&raquo;</h2>
+          <div class="afisha__event-text">
+            <p>31&nbsp;июля 2021 года&nbsp;&mdash; особенный день в&nbsp;усадьбе. Долгие месяцы подготовки для того, чтобы погрузиться.</p>
+          </div>
+          <a href="#" class="afisha__event-link">Читать подробнее</a>
+        </li>
+        <li class="afisha__event">
+          <div class="afisha__event-pic">
+            <a href="#"><img src="/images/afisha/afisha-pic-2.png" alt="" loading="lazy"></a>
+          </div>
+          <h2>День рождения усадьбы 2024</h2>
+          <div class="afisha__event-text">
+            <p>31&nbsp;июля 2021 года&nbsp;&mdash; особенный день в&nbsp;усадьбе. Долгие месяцы подготовки для того, чтобы погрузиться хотя&nbsp;бы на&nbsp;один день в&nbsp;атмосферу 19&nbsp;века.&nbsp;31&nbsp;июля 2021 года&nbsp;&mdash; особенный день в&nbsp;усадьбе. </p>
+          </div>
+          <a href="#" class="afisha__event-link">Читать подробнее</a>
+        </li>
+      </ul>
+      <a href="#" class="afisha__show-more">
+        Показать еще
+        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.45457 7.81694C5.20352 8.06102 4.79648 8.06102 4.54543 7.81694L0.688289 4.06694C0.437237 3.82286 0.437237 3.42714 0.688289 3.18306C0.93934 2.93898 1.34637 2.93898 1.59743 3.18306L5 6.49112L8.40257 3.18306C8.65363 2.93898 9.06066 2.93898 9.31171 3.18306C9.56276 3.42714 9.56276 3.82286 9.31171 4.06694L5.45457 7.81694Z" fill="#597263" />
+        </svg>
+      </a>
+    </section>
+  </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,150 @@
+.afisha {
+  grid-column: 1 / -1;
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+  @media ($tablet) {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+}
+
+.afisha__events {
+  @include list-reset;
+  display: grid;
+  row-gap: 40px;
+  align-items: flex-start;
+
+  @media ($tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    row-gap: 40px;
+  }
+
+  @media ($desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+.afisha__event {
+  position: relative;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 115%;
+    color: #000;
+
+    @media ($small) {
+      font-size: 24px;
+      line-height: 125%;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 140%;
+
+    @media ($small) {
+      font-size: 24px;
+      line-height: 150%;
+    }
+  }
+}
+
+.afisha__event-text {
+  margin-bottom: 23px;
+}
+
+.afisha__event-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 4px 6px 3px 6px;
+  background: #fff;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+
+  @media ($small) {
+    border-radius: 11px;
+    padding: 9px 10px;
+    font-size: 16px;
+  }
+}
+
+.afisha__event-pic {
+  border-radius: 10px;
+  height: 280px;
+  overflow: hidden;
+  margin-bottom: 14px;
+
+  @media ($small) {
+    border-radius: 24px;
+    margin-bottom: 20px;
+  }
+
+  @media ($desktop) {
+    height: 350px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.afisha__event-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: max-content;
+  border-radius: 8px;
+  padding: 9px 12px;
+  background: #61a27b;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  border: 2px solid #61a27b;
+  transition: all 0.3s ease;
+
+  @media ($small) {
+    padding: 12px 20px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    color: #61a27b;
+    background: #fff;
+  }
+}
+
+.afisha__show-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #597263;
+  border-radius: 5px;
+  margin-top: 28px;
+  padding: 10px 92px;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: #597263;
+
+  @media ($tablet) {
+    display: none;
+  }
+}
