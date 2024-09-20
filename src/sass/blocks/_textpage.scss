@@ -33,6 +33,10 @@
 }
 
 .textpage__text {
+  * {
+    user-select: none;
+  }
+
   h1 {
     max-width: 800px;
     margin: 0 auto;
@@ -142,7 +146,7 @@
       line-height: 18px;
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 5px;
         left: 0;
@@ -225,14 +229,14 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 20px;
       display: block;
       width: 20px;
       height: 16px;
-      background-image: url("../images/quotes.svg");
+      background-image: url('../images/quotes.svg');
       background-repeat: no-repeat;
       background-size: contain;
     }

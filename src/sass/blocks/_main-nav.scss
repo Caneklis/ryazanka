@@ -38,7 +38,7 @@
     }
   }
 
-  @media ($small) {
+  @media ($tablet) {
     display: none;
   }
 }
@@ -46,6 +46,7 @@
 .main-nav {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   grid-column: 5 / span 8;
 }
 
@@ -69,7 +70,7 @@
     padding-right: 20px;
     background-color: #e4f0e9;
 
-    @media ($small) {
+    @media ($tablet) {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -77,11 +78,12 @@
     }
   }
 
-  @media ($small) {
+  @media ($tablet) {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    column-gap: 25px;
+    align-items: center;
+    column-gap: 20px;
   }
 
   @media ($desktop) {
@@ -129,10 +131,11 @@
     }
   }
 
-  @media ($small) {
+  @media ($tablet) {
     position: relative;
     margin-bottom: 0;
     padding-bottom: 10px;
+    margin-bottom: -10px;
 
     &::after {
       display: none;
@@ -154,6 +157,10 @@
       }
     }
   }
+
+  @media ($small) {
+    margin-bottom: 0;
+  }
 }
 
 .main-nav__subitem {
@@ -163,18 +170,22 @@
     font-size: 12px;
     line-height: 28px;
 
-    @media ($small) {
+    @media ($tablet) {
       display: flex;
       justify-content: center;
       text-align: center;
-      padding: 20px 5px;
+      padding: 10px 5px;
       font-weight: 600;
-      font-size: 16px;
-      line-height: 22px;
 
       &:hover {
         background: #d9f8e5;
       }
+    }
+
+    @media ($small) {
+      padding: 20px 5px;
+      font-size: 16px;
+      line-height: 22px;
     }
   }
 }
@@ -182,16 +193,18 @@
 .main-nav__link {
   font-weight: bold;
   font-size: 16px;
-  line-height: 20px;
-  /* or 125% */
-
+  line-height: 125%;
   color: #597263;
+
+  @media ($tablet) {
+    font-size: 14px;
+    color: #000;
+  }
 
   @media ($desktop) {
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    color: #000;
     transition: $transition;
 
     &:hover {
@@ -219,7 +232,7 @@
   margin-top: 20px;
   margin-bottom: 38px;
 
-  @media ($small) {
+  @media ($tablet) {
     display: none;
   }
 }

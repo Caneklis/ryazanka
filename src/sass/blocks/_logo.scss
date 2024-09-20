@@ -4,12 +4,35 @@
 
 .logo__link {
   display: flex;
-  align-items: center;
-  column-gap: 40px;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
   color: #587162;
+
+  @media ($tablet) {
+    font-size: 12px;
+    line-height: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .logo__text {
+      display: none;
+    }
+  }
+
+  @media ($small) {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+    font-size: 14px;
+    line-height: 20px;
+
+    .logo__text {
+      display: block;
+    }
+  }
+
+  @media ($desktop) {
+    column-gap: 40px;
+  }
 
   @media (max-width: 767px) {
     color: #000;
