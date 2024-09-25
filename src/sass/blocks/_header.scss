@@ -4,7 +4,7 @@
     min-height: 100vh;
     grid-template-rows: 100px 1fr;
 
-    @media ($tablet) {
+    @media ($small) {
       grid-template-rows: 80px 1fr;
 
       .header__wrapper {
@@ -12,7 +12,7 @@
       }
     }
 
-    @media ($small) {
+    @media ($desktop) {
       grid-template-rows: 100px 1fr;
 
       .header__wrapper {

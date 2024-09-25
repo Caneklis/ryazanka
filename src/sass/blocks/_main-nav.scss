@@ -38,7 +38,7 @@
     }
   }
 
-  @media ($tablet) {
+  @media ($small) {
     display: none;
   }
 }
@@ -70,15 +70,17 @@
     padding-right: 20px;
     background-color: #e4f0e9;
 
-    @media ($tablet) {
+    @media ($small) {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       background-color: #fff;
+      position: static;
+      padding-top: 0;
     }
   }
 
-  @media ($tablet) {
+  @media ($small) {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -88,6 +90,7 @@
 
   @media ($desktop) {
     column-gap: 45px;
+    padding-top: 20px;
   }
 
   &--invert {
@@ -131,7 +134,7 @@
     }
   }
 
-  @media ($tablet) {
+  @media ($small) {
     position: relative;
     margin-bottom: 0;
     padding-bottom: 10px;
@@ -170,7 +173,7 @@
     font-size: 12px;
     line-height: 28px;
 
-    @media ($tablet) {
+    @media ($small) {
       display: flex;
       justify-content: center;
       text-align: center;
@@ -232,7 +235,7 @@
   margin-top: 20px;
   margin-bottom: 38px;
 
-  @media ($tablet) {
+  @media ($small) {
     display: none;
   }
 }
