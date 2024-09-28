@@ -145,6 +145,14 @@
   color: #597263;
 
   @media ($tablet) {
-    display: none;
+    max-width: max-content;
+    min-width: 240px;
+    padding: 7px;
+    margin-top: 60px;
+    font-size: 18px;
+
+    svg {
+      display: none;
+    }
   }
 }
