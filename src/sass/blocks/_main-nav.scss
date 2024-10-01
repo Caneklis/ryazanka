@@ -96,6 +96,10 @@
   &--invert {
     .main-nav__link {
       color: #fff;
+
+      @media (max-width: 1024px) {
+        color: #597263;
+      }
     }
   }
 }

@@ -1,4 +1,12 @@
-<header class="header  header--inner  {% if invert %} header--invert{% endif %}">
+<header class="header  header--inner  {% if invert %} header--invert{% endif %} {% if nobg %} header--nobg{% endif %} ">
+  {% if nobg %}
+  <div class="header__bg">
+    <picture>
+      <source srcset="/images/banner-bg.jpg" media="(min-width: 600px)">
+      <img src="/images/banner-bg-mobile.jpg" alt="" aria-hidden="true">
+    </picture>
+  </div>
+  {% endif %}
   <div class="header__wrapper">
     <div class="logo">
       <a href="index.html" class="logo__link  {% if invert %} logo__link--invert{% endif %}">
